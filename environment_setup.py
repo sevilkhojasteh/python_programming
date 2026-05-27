@@ -65,5 +65,21 @@ How to see the list of environments?
 conda env list
 How to see the installed packages in the environment?
 conda list
+** even if you use "pip" to install packages in a conda environment, they will be available in that environment as well, but it's generally recommended to use "conda install" when working within a conda environment to ensure better compatibility and dependency management.
+How to remove a package from the environment?
+conda remove package_name
+How to export the environment to a file?
+conda env export > environment.yml
+How to create an environment from a file?
+conda env create -f environment.yml
+how to see .yml file content?
+cat environment.yml
 
+"""
+"""
+When to create a new environment?
+1. When working on a new project: Creating a new environment for each project helps to keep dependencies isolated and prevents conflicts between different projects.
+2. When testing new packages or versions: If you want to try out a new package or a different version of an existing package, creating a new environment allows you to test it without affecting your existing projects.
+3. When collaborating with others: If you're working on a project with other developers, creating a shared environment ensures that everyone is using the same dependencies and versions, which can help avoid compatibility issues.
+4. When managing different Python versions: If you need to work with different versions of Python for different projects, creating separate environments allows you to easily switch between them without conflicts.
 """
