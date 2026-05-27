@@ -49,4 +49,21 @@ One of the most well-known repositories is PyPI (Python Package Index), which is
 
 """
 
-# Milestone test for a darker green 
+"""
+How to create an environment in conda?
+conda create --name myenv python=3.8
+How to activate the environment?
+conda activate myenv
+How to deactivate the environment?
+conda deactivate
+How to delete the environment?
+conda remove --name myenv --all
+To update the environment with new packages or updates, you can use:
+conda install package_name
+conda update package_name
+How to see the list of environments?
+conda env list
+How to see the installed packages in the environment?
+conda list
+
+"""
