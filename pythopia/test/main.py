@@ -1,6 +1,8 @@
 # Basic import statement
 import math_operations
+import sys
 
+print(sys.path)
 
 result = math_operations.add(5, 3)
 print(result)  # Output: 8
@@ -28,3 +30,16 @@ from math_operations import add as a
 
 # Import all Items from a module (use cautiously)
 from math_operations import *
+
+"""
+Module search path:
+1. the directory containing the input script
+2. PYTHONPATH
+export PYTHONPATH=$PYTHONPATH:$PWD
+echo $PYTHONPATH
+in terminal
+3. Standard library directories
+4. Site-packages directories
+5. Additional directories specified by the user
+
+"""
