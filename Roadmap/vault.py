@@ -4,4 +4,13 @@ class Vault:
         self.sickles = sickles
         self.knuts = knuts
 
+    def __str__(self):
+        return f"{self.galleons} Galleons, {self.sickles} Sickles, {self.knuts} Knuts"
+
+
+
+
+
+potter = Vault(100, 50, 25)
+print(potter)
 
